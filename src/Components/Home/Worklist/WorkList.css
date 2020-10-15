@@ -1,0 +1,39 @@
+/* .Carousel{
+    width: '500px';
+} */
+.heading{
+    text-align: center;
+    padding: 40px;
+}
+.text-margin{
+    margin:50px;
+
+}
+
+.carousel-container{
+    margin-left: 430px;
+}
+
+.work-container {
+    margin-top: 100px;
+    height:500px;
+    width:100%;
+    position:relative;
+    background:rgba(17, 20, 48, 1);
+}
+.work-container::after, ..work-container::before {
+    height:300px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    z-index: -50;
+}
+.work-container::after {
+    right: 0;
+    background-color: rgba(17, 20, 48, 1);
+}
+.work-container::before {
+    left: 0;
+    background-color: rgba(17, 20, 48, 1);
+}

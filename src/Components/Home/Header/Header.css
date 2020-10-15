@@ -1,0 +1,26 @@
+/* body{
+    background-color: FBD062;
+} */
+
+.header-container {
+    height:700px;
+    width:100%;
+    position:relative;
+    background:rgba(251, 208, 98, 1);
+}
+.header-container::after, .header-container::before {
+    height:700px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    z-index: -50;
+}
+.header-container::after {
+    right: 0;
+    background-color: rgba(251, 208, 98, 1);
+}
+.header-container::before {
+    left: 0;
+    background-color: rgba(251, 208, 98, 1);
+}

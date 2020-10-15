@@ -1,0 +1,30 @@
+.footer-container {
+    height:700px;
+    width:100%;
+    position:relative;
+    background:rgba(251, 208, 98, 1);
+}
+.sizing{
+    padding: 100px;
+}
+.footer-container::after, .footer-container::before {
+    height:700px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    z-index: -50;
+}
+.footer-container::after {
+    right: 0;
+    background-color: rgba(251, 208, 98, 1);
+}
+.footer-container::before {
+    left: 0;
+    background-color: rgba(251, 208, 98, 1);
+}
+.copyright{
+    text-align: center;
+    color: black;
+    margin-top:120px;
+}
